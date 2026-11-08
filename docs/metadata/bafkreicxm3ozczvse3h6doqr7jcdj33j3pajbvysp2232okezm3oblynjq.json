@@ -1,0 +1,22 @@
+{
+  "schemaVersion": 2,
+  "name": "ABIDIN Irrigation AI — Irrigation intelligente et économie d’eau",
+  "description": "Ce projet propose de développer un prototype d’irrigation intelligente combinant des capteurs d’humidité du sol et un modèle d’apprentissage automatique. Le système estimera les besoins en eau des plantes afin d’adapter l’arrosage aux conditions observées. L’étude comparera cette approche à une irrigation programmée classique. Cette campagne est une démonstration pédagogique ; aucun résultat scientifique n’est encore revendiqué.",
+  "category": "Artificial Intelligence",
+  "objectives": "1. Mesurer l’humidité du sol et les conditions environnementales.\n2. Développer un modèle estimant les besoins d’irrigation.\n3. Comparer la consommation d’eau avec celle d’un arrosage à horaires fixes.\n4. Évaluer le maintien de l’humidité dans une plage adaptée aux plantes.\n5. Publier le code, le protocole expérimental et les limites observées.",
+  "methodology": "Un prototype fonctionnel d’irrigation intelligente.\nUn jeu de données expérimental documenté.\nUn modèle prédictif évalué face à des méthodes de référence.\nUn rapport présentant les économies d’eau éventuellement observées, les erreurs et les limites.\nUn dépôt de code permettant de reproduire les expérimentations.\nAucun pourcentage d’économie d’eau n’est garanti à ce stade.",
+  "outcomes": "Un prototype fonctionnel d’irrigation intelligente.\nUn jeu de données expérimental documenté.\nUn modèle prédictif évalué face à des méthodes de référence.\nUn rapport présentant les économies d’eau éventuellement observées, les erreurs et les limites.\nUn dépôt de code permettant de reproduire les expérimentations.\nAucun pourcentage d’économie d’eau n’est garanti à ce stade.",
+  "team": "Azddine El Hamdaoui — Élève ingénieur en Intelligence Artificielle et Cybersécurité à l’ENSA Béni Mellal.\nRôle proposé : conception du prototype, préparation des données, développement du modèle et évaluation expérimentale.",
+  "image": "bafybeieo6z4lqv55j34zogpfpxiqumjb7m47446hcmmdmn7hwqs2ud36qa",
+  "demo": false,
+  "milestones": [
+    "Définition du protocole expérimental",
+    "Sélection et installation des capteurs",
+    "Collecte et préparation des données",
+    "Développement du modèle prédictif",
+    "Intégration du dispositif d’irrigation",
+    "Comparaison avec les méthodes de référence",
+    "Publication du code et du rapport"
+  ],
+  "documents": []
+}

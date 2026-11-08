@@ -1,0 +1,14 @@
+npm warn Unknown env config "http-proxy". This will stop working in the next major version of npm.
+
+> researchfund@1.0.0 build
+> vite build frontend
+
+vite v6.4.1 building for production...
+transforming...
+✓ 164 modules transformed.
+rendering chunks...
+computing gzip size...
+dist/index.html                  18.66 kB │ gzip:   6.65 kB
+dist/assets/index-CyXTkz-7.css   30.57 kB │ gzip:   8.12 kB
+dist/assets/index-BiKjCr_F.js   318.00 kB │ gzip: 116.20 kB
+✓ built in 1.36s

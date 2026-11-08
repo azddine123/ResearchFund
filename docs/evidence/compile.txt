@@ -1,0 +1,6 @@
+npm warn Unknown env config "http-proxy". This will stop working in the next major version of npm.
+
+> researchfund@1.0.0 compile
+> hardhat compile
+
+Compiled 35 Solidity files successfully (evm target: paris).

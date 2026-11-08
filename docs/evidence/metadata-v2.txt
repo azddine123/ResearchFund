@@ -1,0 +1,17 @@
+npm warn Unknown env config "http-proxy". This will stop working in the next major version of npm.
+
+> researchfund@1.0.0 test:metadata
+> node --test test/research-metadata.test.mjs
+
+✔ legacy metadata is retained with empty research fields (2.79613ms)
+✔ scientific metadata round-trip retains declarations (0.384979ms)
+✔ reject oversized text and unsafe document references (0.62114ms)
+✔ image CID survives normalization and legacy projects remain valid (0.907495ms)
+ℹ tests 4
+ℹ suites 0
+ℹ pass 4
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 125.88727

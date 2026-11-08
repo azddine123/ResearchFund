@@ -1,0 +1,7 @@
+{
+  "contracts/CrowdfundingCore.sol": "adf01629c3edbd336b4e69f2a5e17fb1531563566ac853a989b1ce3b0158d5e7",
+  "contracts/TreasuryGuard.sol": "ce21dd519024191cf10ba72dabe1a84aa57395d4a0d2ecee5a2b67aed0d8eaca",
+  "contracts/CFDToken.sol": "2b1b3df364753a0ef39aeb7ab9459399f1dfa76741c49647a700a33c1d3630a7",
+  "contracts/FundingDAO.sol": "faa1e6d035f8d32336322e57f56908bce55821967764ad7ad43ea182ae14c95e",
+  "contracts/test/Attackers.sol": "79f1db1d3e2d351acfaf68376eb6acd65a8a0fee745841d869ec0b74dd3f507e"
+}

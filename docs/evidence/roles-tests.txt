@@ -1,0 +1,7 @@
+PASS : visiteur, membre, admin, gestionnaire des rôles, bénéficiaire, deux signataires.
+PASS : pause/reprise, attribution/révocation ADMIN_ROLE et actualisation des droits.
+PASS : approbation, révocation, 2 signatures distinctes et retrait du bénéficiaire de 1.2 ETH.
+PASS : aucun bouton de retrait tiers, file actualisée après retrait, mobile 390px, aucune erreur JS.
+PASS : rotation avec révocation, délai de 48 h, nouveaux droits, anciennes signatures invalidées et nouvelles signatures.
+PASS : secours après 14 jours, bouton de remboursement actif en pause, remboursement réel, aucun retrait expiré.
+Fournisseur EIP-1193 de test ; extension MetaMask réelle non testée.

@@ -1,0 +1,18 @@
+{
+  "schemaVersion": 2,
+  "name": "AI-Assisted Medical Imaging",
+  "description": "Prototype fictif destiné à la recherche ; aucun usage clinique ni diagnostic.",
+  "category": "Healthcare & Biotechnology",
+  "objectives": "Étudier la robustesse d’un classifieur sur des images publiques anonymisées.",
+  "methodology": "Séparation entraînement/test, analyse des biais et évaluation expérimentale.",
+  "outcomes": "Rapport de recherche sans validation clinique.",
+  "team": "Équipe universitaire fictive · ResearchFund Demo",
+  "demo": true,
+  "milestones": [
+    "Research Planning",
+    "Prototype Development",
+    "Experimental Validation",
+    "Results Publication"
+  ],
+  "documents": []
+}

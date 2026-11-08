@@ -1,0 +1,18 @@
+{
+  "schemaVersion": 2,
+  "name": "Open Cybersecurity Research Lab",
+  "description": "Laboratoire fictif open source de cybersécurité défensive ; annulation pédagogique, sans accusation réelle.",
+  "category": "Cybersecurity",
+  "objectives": "Construire des exercices défensifs reproductibles.",
+  "methodology": "Journaux synthétiques, règles de détection et validation en environnement isolé.",
+  "outcomes": "Scénarios et documentation open source.",
+  "team": "Équipe universitaire fictive · ResearchFund Demo",
+  "demo": true,
+  "milestones": [
+    "Research Planning",
+    "Prototype Development",
+    "Experimental Validation",
+    "Results Publication"
+  ],
+  "documents": []
+}

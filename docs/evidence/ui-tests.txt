@@ -1,0 +1,3 @@
+ResearchFund : catégorie, détail scientifique, création IPFS/on-chain et confirmation de don validés. UI vérifiée : 4 campagnes réelles, filtres, 3 propositions, alertes, formulaire, mobile 390px sans débordement, absence de wallet, connexion EIP-1193 injectée et contribution réelle de 0.001 ETH.
+Aucune erreur JavaScript non interceptée.
+MetaMask réel : validation manuelle restant à réaliser dans le navigateur de l’étudiant.

@@ -1,0 +1,40 @@
+{
+  "method": "Heuristiques déterministes v1",
+  "source": {
+    "chainId": 31337,
+    "core": "0xe7f1725E7734CE288F8367e1Bb143E90bb3F0512",
+    "fromBlock": 2,
+    "toBlock": 70
+  },
+  "event_count": 12,
+  "alerts": [
+    {
+      "campaign": 1,
+      "rule": "REPETITION",
+      "level": "À examiner",
+      "message": "4 contributions du même montant depuis une même adresse.",
+      "evidence": {
+        "address": "0x70997970c51812dc3a010c7d01b50e0d17dc79c8",
+        "amount_wei": "100000000000000000",
+        "count": 4
+      }
+    },
+    {
+      "campaign": 1,
+      "rule": "BURST",
+      "level": "À examiner",
+      "message": "5 contributions en cinq minutes ; un lancement collectif peut expliquer ce pic.",
+      "evidence": {
+        "start": 1794077819,
+        "end": 1794077823,
+        "count": 5
+      }
+    }
+  ],
+  "limitations": [
+    "Aucune preuve de fraude ni inférence d’identité.",
+    "Pas de détection d’adresses liées sans données externes.",
+    "Historique jusqu’au bloc indiqué seulement ; relancer après de nouvelles transactions.",
+    "Aucune action automatique sur les fonds."
+  ]
+}

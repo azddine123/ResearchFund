@@ -1,0 +1,18 @@
+{
+  "schemaVersion": 2,
+  "name": "Solar Energy Optimization",
+  "description": "Démonstration fictive : optimisation de la production photovoltaïque.",
+  "category": "Renewable Energy",
+  "objectives": "Évaluer plusieurs stratégies de suivi de production solaire.",
+  "methodology": "Simulations et comparaison sur séries temporelles ouvertes.",
+  "outcomes": "Benchmark et documentation des limites.",
+  "team": "Équipe universitaire fictive · ResearchFund Demo",
+  "demo": true,
+  "milestones": [
+    "Research Planning",
+    "Prototype Development",
+    "Experimental Validation",
+    "Results Publication"
+  ],
+  "documents": []
+}

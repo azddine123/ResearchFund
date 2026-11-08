@@ -1,0 +1,18 @@
+{
+  "schemaVersion": 2,
+  "name": "Smart Agriculture AI",
+  "description": "Démonstration fictive : irrigation intelligente par apprentissage automatique et capteurs IoT.",
+  "category": "Artificial Intelligence",
+  "objectives": "Réduire la consommation d’eau sur une parcelle expérimentale.",
+  "methodology": "Comparer une commande par seuil et un modèle prédictif sur des données synthétiques.",
+  "outcomes": "Prototype et protocole de mesure reproductible.",
+  "team": "Équipe universitaire fictive · ResearchFund Demo",
+  "demo": true,
+  "milestones": [
+    "Research Planning",
+    "Prototype Development",
+    "Experimental Validation",
+    "Results Publication"
+  ],
+  "documents": []
+}

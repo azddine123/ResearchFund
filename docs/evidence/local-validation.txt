@@ -1,0 +1,13 @@
+RUN npm run deploy:local
+RUN npm run demo
+RUN node scripts/check-ipfs.mjs
+RUN npx hardhat run scripts/export-events.js --network localhost
+RUN python scripts/analyze.py docs/evidence/contributions.json
+10 événements, 2 alertes explicables.
+RUN node scripts/check-ui.cjs
+UI et transaction EIP-1193 validées.
+RUN npx hardhat run scripts/export-events.js --network localhost
+RUN python scripts/analyze.py docs/evidence/contributions.json
+11 événements, 2 alertes explicables.
+RUN npm run build
+VALIDATION LOCALE TERMINÉE

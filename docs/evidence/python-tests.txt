@@ -1,0 +1,10 @@
+npm warn Unknown env config "http-proxy". This will stop working in the next major version of npm.
+
+> researchfund@1.0.0 test:python
+> python3 -m unittest discover -s test -p 'test_*.py'
+
+.....
+----------------------------------------------------------------------
+Ran 5 tests in 0.000s
+
+OK

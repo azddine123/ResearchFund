@@ -1,0 +1,48 @@
+npm warn Unknown env config "http-proxy". This will stop working in the next major version of npm.
+
+> researchfund@1.0.0 test
+> hardhat test
+
+Compiled 35 Solidity files successfully (evm target: paris).
+✔ legacy metadata is retained with empty research fields (3.429153ms)
+✔ scientific metadata round-trip retains declarations (0.394486ms)
+✔ reject oversized text and unsafe document references (0.601994ms)
+✔ image CID survives normalization and legacy projects remain valid (0.870696ms)
+
+
+  AtlasFund — exigences fonctionnelles et adversariales
+    ✔ M1 : frappe proportionnelle, auto-délégation, aucune frappe publique
+    ✔ CFD personnel : transferts et délégation à un tiers refusés
+    ✔ M2 : objectif, durée, bénéficiaire et CID contrôlés
+    ✔ M2 : contribution nulle ou campagne inexistante refusée
+    ✔ M2 : transition En cours -> Réussie à échéance, retrait encore bloqué
+    ✔ M2 : Échouée -> remboursement exact + destruction CFD + pas de double remboursement
+    ✔ Refus d’ETH : rollback intégral puis remboursement possible
+    ✔ Attaque réelle de réentrance sur refund : tentative observée et rejetée
+    ✔ M3 : déblocage anticipé sous objectif, clôture des contributions et retrait
+    ✔ Attaque réelle de réentrance sur withdraw : échec et autres campagnes intactes
+    ✔ M3 : gel = Annulée, restitution ouverte, retrait impossible
+    ✔ Une campagne échouée ne peut être sauvée rétroactivement par un vote
+    ✔ Contrôle d’accès : Admin ne peut ni forcer la DAO ni retirer les fonds
+    ✔ Circuit breaker : création/contribution/retrait/remboursement suspendus, reprise
+    ✔ La DAO peut geler pendant une pause ; remboursements après reprise
+    ✔ Snapshot : acquisition APRÈS proposition = aucun nouveau vote
+    ✔ Snapshot même bloc : la frappe ne permet pas de proposer immédiatement
+    ✔ Vote unique, délai de scrutin et délai d’exécution effectifs
+    ✔ Quorum non atteint malgré 100 % de oui parmi les votants : rejet
+    ✔ Égalité oui/non : rejet
+    ✔ Multisig > 1 ETH : deux signataires distincts, autorisation liée au montant
+    ✔ Multisig : révocation, non-signataire, signataires dupliqués refusés
+    ✔ Seuil exact de 1 ETH : DAO obligatoire, multisig non exigée
+    ✔ Gel prioritaire sur autorisation non retirée, puis remboursement
+    ✔ Snapshot après destruction : pouvoir ancien conservé, nouvelles propositions sans votes
+    ✔ Fuzzing déterministe : 64 montants, 4 campagnes, conservation ETH et CFD (seed 0xC0FFEE) (288ms)
+
+
+  26 passing (2s)
+
+npm notice
+npm notice New major version of npm available! 11.9.0 -> 12.2.2
+npm notice Changelog: https://github.com/npm/cli/releases/tag/v12.2.2
+npm notice To update run: npm install -g npm@12.2.2
+npm notice

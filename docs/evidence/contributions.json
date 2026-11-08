@@ -1,0 +1,104 @@
+{
+  "chainId": 31337,
+  "core": "0xe7f1725E7734CE288F8367e1Bb143E90bb3F0512",
+  "fromBlock": 2,
+  "toBlock": 70,
+  "events": [
+    {
+      "campaign": 0,
+      "address": "0x70997970C51812dc3A010C7d01b50e0d17dc79C8",
+      "amount_wei": "1200000000000000000",
+      "timestamp": 1794077817,
+      "block": 9,
+      "tx": "0x9185f770148644ea983c454e5b8b3f917b6097459907a62b74eaa10f56c5bc18"
+    },
+    {
+      "campaign": 0,
+      "address": "0x3C44CdDdB6a900fa2b585dd299e03d12FA4293BC",
+      "amount_wei": "600000000000000000",
+      "timestamp": 1794077818,
+      "block": 10,
+      "tx": "0xab1381a0cdc2457d69464a473bc8aa430ada7346cac2da60e2ad913d2c4468ac"
+    },
+    {
+      "campaign": 1,
+      "address": "0x70997970C51812dc3A010C7d01b50e0d17dc79C8",
+      "amount_wei": "100000000000000000",
+      "timestamp": 1794077819,
+      "block": 11,
+      "tx": "0x3122272e9a76f80b2066d59cb9602d7c15f1b51273a67b81a4c06cefcc4c8d8c"
+    },
+    {
+      "campaign": 1,
+      "address": "0x70997970C51812dc3A010C7d01b50e0d17dc79C8",
+      "amount_wei": "100000000000000000",
+      "timestamp": 1794077820,
+      "block": 12,
+      "tx": "0xa103ff54c063fdd9e83e70d1cda9b035766f2514713438a5bc20d490303e2b2c"
+    },
+    {
+      "campaign": 1,
+      "address": "0x70997970C51812dc3A010C7d01b50e0d17dc79C8",
+      "amount_wei": "100000000000000000",
+      "timestamp": 1794077821,
+      "block": 13,
+      "tx": "0x7b3eec2dac8840e6d459d437d96ab6f1a597e8adfe8d47fb119d8b1f711e91bb"
+    },
+    {
+      "campaign": 1,
+      "address": "0x70997970C51812dc3A010C7d01b50e0d17dc79C8",
+      "amount_wei": "100000000000000000",
+      "timestamp": 1794077822,
+      "block": 14,
+      "tx": "0xc6199fb65c0b030e72def027882919b3f449b415584de1ab7f89c2c0ca7b6a47"
+    },
+    {
+      "campaign": 1,
+      "address": "0x3C44CdDdB6a900fa2b585dd299e03d12FA4293BC",
+      "amount_wei": "150000000000000000",
+      "timestamp": 1794077823,
+      "block": 15,
+      "tx": "0xa8a7587a05ac864f04e43428ded1a1f2b424d80f1e1d61e614e95c8d24d5f0d7"
+    },
+    {
+      "campaign": 2,
+      "address": "0x3C44CdDdB6a900fa2b585dd299e03d12FA4293BC",
+      "amount_wei": "250000000000000000",
+      "timestamp": 1794077824,
+      "block": 16,
+      "tx": "0x0aaa889eb501caf3ed35188ccb5e64a83df7db743c89c2532e71e06dcc953d87"
+    },
+    {
+      "campaign": 3,
+      "address": "0x70997970C51812dc3A010C7d01b50e0d17dc79C8",
+      "amount_wei": "200000000000000000",
+      "timestamp": 1794077825,
+      "block": 17,
+      "tx": "0xbbe13eed42fd1f0778d54380cb9c1a3760eb10d6cc82bd31d6f30270b58f488b"
+    },
+    {
+      "campaign": 3,
+      "address": "0x3C44CdDdB6a900fa2b585dd299e03d12FA4293BC",
+      "amount_wei": "100000000000000000",
+      "timestamp": 1794077826,
+      "block": 18,
+      "tx": "0x303156d9717d9e852fb129c8bf94a7b4c7708652ab23b9e0b63aab9ec01ad90f"
+    },
+    {
+      "campaign": 4,
+      "address": "0x70997970C51812dc3A010C7d01b50e0d17dc79C8",
+      "amount_wei": "1200000000000000000",
+      "timestamp": 1794085645,
+      "block": 35,
+      "tx": "0x2176b303788e53b6e000afc2320d43ad089e94c20b9f0181319cd58831d467c4"
+    },
+    {
+      "campaign": 5,
+      "address": "0x70997970C51812dc3A010C7d01b50e0d17dc79C8",
+      "amount_wei": "1200000000000000000",
+      "timestamp": 1794093478,
+      "block": 52,
+      "tx": "0xed79a539bf6c9ff2c1a570b4f34117275acfac138e312299ae92f88b058e4db0"
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "schemaVersion": 2,
+  "name": "Smart Irrigation AI: Intelligent Water Management Using Machine Learning",
+  "description": "This research project aims to develop an intelligent irrigation prototype using IoT sensors and machine learning. The system analyzes soil moisture, temperature, and environmental conditions to optimize water consumption and improve agricultural sustainability.",
+  "category": "Artificial Intelligence",
+  "objectives": "Develop an AI-powered irrigation system capable of monitoring soil conditions, predicting irrigation needs, reducing unnecessary water consumption, and providing automated recommendations for sustainable agriculture.",
+  "methodology": "1. Collect environmental data using IoT sensors.\n2. Build and preprocess an experimental dataset.\n3. Train and evaluate machine learning models to predict irrigation requirements.\n4. Integrate the selected model into a prototype.\n5. Evaluate water consumption and prediction accuracy.",
+  "outcomes": "A functional smart irrigation prototype, a documented machine learning model, an experimental dataset, performance evaluation results, and an open-source technical report.",
+  "team": "AI & IoT Research Team — ENSA Béni Mellal (Fictional Demonstration)",
+  "image": "bafkreihmjbml2pjjhjidmvd6yr4gspmpa6da4ajfvkodwamlovdnfuflqa",
+  "demo": false,
+  "milestones": [
+    "Literature Review and Research Planning",
+    "IoT Sensor Integration and Data Collection",
+    "Dataset Preparation and Machine Learning Training",
+    "Prototype Development and Integration",
+    "Experimental Validation and Final Report"
+  ],
+  "documents": []
+}

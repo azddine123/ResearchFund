@@ -1,0 +1,16 @@
+{
+  "schemaVersion": 2,
+  "name": "UI Research Project",
+  "description": "Created in automated ResearchFund validation",
+  "category": "Open Science",
+  "objectives": "Research objectives",
+  "methodology": "Research methodology",
+  "outcomes": "Research outcomes",
+  "team": "Research team",
+  "demo": false,
+  "milestones": [
+    "Plan",
+    "Publish"
+  ],
+  "documents": []
+}

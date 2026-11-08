@@ -1,0 +1,1 @@
+4 métadonnées relues par CID, identiques aux sources, empreintes SHA-256 vérifiées. JSON invalide et origine non autorisée rejetés.

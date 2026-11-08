@@ -1,0 +1,103 @@
+/* Variante Prisme. La réfraction agit sur le fond des surfaces de lecture. */
+:root {
+ --bg:#111426; --surface:#232b43; --surface2:#2c334f; --ink:#f7f7ff;
+ --muted:#c4c9dd; --accent:#b8f4ed; --purple:#e4c8ff; --line:#49536c;
+ --glass-border:rgba(224,237,255,.32);
+ --frost:blur(23px) saturate(140%);
+}
+body {
+ background-color:var(--bg);
+ background-image:radial-gradient(ellipse at 78% 15%,#4c416b85,transparent 50%),radial-gradient(ellipse at 3% 48%,#0c637452,transparent 45%);
+ background-attachment:fixed;
+}
+.sidebar,header {background:rgba(18,21,39,.8);border-color:#30364d}
+.brand .mark{color:#e0d0ff}.nav.active{background:#d4cef3;color:#201c37}
+.ledger-hero {
+ isolation:isolate;overflow:hidden;color:#fff;
+ background:radial-gradient(ellipse at 85% 75%,#54788d 0,transparent 48%),linear-gradient(115deg,#24253e 12%,#34324e 43%,#715584 75%,#345366 100%);
+ border:1px solid var(--glass-border);border-radius:30px;
+ box-shadow:inset 0 1px 0 #ffffff30,0 24px 55px #0609193b;
+ padding:clamp(32px,4.5vw,70px);gap:7%;min-height:450px;
+}
+.prism-light{position:absolute;inset:0;width:100%;height:100%;z-index:-1;pointer-events:none}
+.ledger-intro{position:relative;z-index:1}.edition,.ledger-intro>p{color:#e5e5f2}.edition i{color:#b9bdd1}
+.ledger-intro h1{font-size:clamp(50px,5vw,74px);line-height:1.02;letter-spacing:-3.6px}
+.ledger-links .primary,.primary{background:#c7f6ee;border-color:#c7f6ee;color:#152d31;border-radius:10px}
+.ledger-links .hero-link{color:#faf7ff;border-color:#c0aec7}
+.ticket-stage{padding:15px 0}.ticket-stage:before{inset:7% 4% 0 0;transform:rotate(-6deg);border:1px solid #ffffff64;background:linear-gradient(120deg,#ede0ff44,#8abcca38);border-radius:20px}
+.ticket {
+ color:#fff;background:linear-gradient(135deg,rgba(48,56,86,.84),rgba(29,43,66,.86));
+ border:1px solid #e5f0ff80;border-radius:20px;transform:rotate(1deg);
+ box-shadow:inset 0 1px 0 #ffffff50,inset 1px 0 0 #ffffff20,0 20px 32px #0d122638;
+}
+@supports ((backdrop-filter:blur(1px)) or (-webkit-backdrop-filter:blur(1px))) {
+ .ticket,.panel,.proposal,.stats,dialog {
+  -webkit-backdrop-filter:var(--frost);backdrop-filter:var(--frost)
+ }
+ .ticket{background:linear-gradient(125deg,rgba(71,70,105,.49),rgba(25,41,63,.67))}
+}
+.ticket select{background:transparent;color:#fff;border-color:#d1dbee55;font-weight:500}
+.ticket select option{color:#f4f3ff;background:#272d43}.ticket-label,.ticket dt,.ticket-tail{color:#eef0ff}
+.ticket dd{color:#fff;font-variant-numeric:tabular-nums}.ticket-state{color:#d8fff8;background:#102f36a8;border-color:#b3f8e6a6;border-radius:30px}
+.ticket details{border-color:#e8f2ff71}.ticket details p{color:#f1f8ff}.ticket summary:focus-visible{outline:2px solid var(--accent);outline-offset:4px}
+.stats,.panel,.proposal,dialog,.guide-grid .panel:nth-child(3n+2){background:linear-gradient(122deg,#46516a73,#282c458a);border:1px solid var(--glass-border);border-radius:18px;box-shadow:inset 0 1px 0 #ffffff19}
+.stats{padding:0 22px;margin-top:18px}.stats>div+div{border-color:#78859c48}
+.card{background:linear-gradient(145deg,#2e3549ef,#222a3bdb);border-color:#74829866;border-radius:18px}
+.card-art{border-bottom:1px solid #b3b9d036}.card:hover{border-color:#acd1de}
+.card .description,.card .card-bottom,.panel p,.proposal p{color:#d4d9e8}
+.filter.selected{border-color:#9791b3;background:#e7d8ff13}
+.closing-banner{background:linear-gradient(110deg,#d2c4ec,#a7e5e0);color:#20253b;border-radius:18px}
+dialog{background-color:#242a40}dialog::backdrop{background:#090c1999;backdrop-filter:blur(9px)}
+@media(max-width:760px){
+ .ledger-hero{grid-template-columns:1fr;padding:25px 20px;gap:22px;border-radius:22px}
+ .prism-light{top:38%;height:67%;width:160%;left:-48%}
+ .ledger-intro h1{font-size:clamp(42px,11vw,55px);letter-spacing:-2.6px}
+ .ticket{transform:none}.stats{padding:0 12px}.stats>div:nth-child(even){padding-left:14px}
+}
+@media(prefers-reduced-transparency:reduce){.ticket,.stats,.panel,.proposal,dialog{background:#293047;backdrop-filter:none}.prism-light{opacity:.45}}
+
+/* Typographie du registre : signature en italique, données en chiffres alignés. */
+.brand small {
+ font:italic 14px/1.25 Georgia,serif;
+ color:#d8cdec;letter-spacing:0;margin-top:3px;
+}
+.breadcrumb,.breadcrumb b {font:500 13px/1.5 var(--body);letter-spacing:0}
+.breadcrumb b {color:#eff0fb}
+.breadcrumb span {color:#b7b2cc;margin:0 8px}
+.network {font:500 12px/1.5 var(--body);letter-spacing:0;color:#d7e2ed}
+.network::before {content:'';display:inline-block;width:7px;height:7px;border-radius:50%;background:currentColor;margin-right:8px}
+.wallet {font:600 13px/1.3 var(--body);border:1px solid #858cab99;border-radius:18px;padding:9px 16px}
+.ledger-intro .edition {font:21px/1.3 Georgia,serif;letter-spacing:-.3px;color:#eae1ff}
+.edition i {color:#ddcdef;font-style:italic;padding:0}
+.stats>div>span {font:500 15px/1.4 var(--body);letter-spacing:0;color:#f0eff9}
+.stats>div>small {font:400 12px/1.55 var(--body);letter-spacing:0;color:#c5c9dc}
+.stats strong {font-variant-numeric:tabular-nums}
+.stats strong.disconnected {font:italic 25px/1.25 Georgia,serif;letter-spacing:-.6px;color:#e1d0f2}
+#initiatives h2 {font:500 clamp(32px,3.2vw,48px)/1.12 Georgia,serif;letter-spacing:-1.6px}
+#initiatives p {font:14px/1.55 var(--body);color:#cdd2e3}
+.filter {font-size:12px}
+#read-label {font:italic 14px/1.4 Georgia,serif;letter-spacing:0;color:#d7cce8}
+@media(max-width:760px) {
+ .network {font-size:11px}.wallet {font-size:12px}
+ .stats>div>span {font-size:13px}.stats>div>small {font-size:11px}
+ .stats strong.disconnected {font-size:21px}
+ .ledger-intro .edition {font-size:19px}
+}
+/* ResearchFund: scientific catalogue and accessible detail sheets. */
+.ledger-intro h1{font-size:clamp(38px,4.5vw,66px);letter-spacing:-2.7px;line-height:1.06}
+.research-metrics{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:16px;margin:24px 0}
+.research-metrics>div{background:var(--surface);border:1px solid var(--line);padding:18px;border-radius:12px;font-size:11px;color:var(--muted)}
+.research-metrics b{display:block;font-size:24px;color:var(--accent);margin-bottom:8px}.research-metrics small{grid-column:1/-1;color:var(--muted)}
+.funding-disclaimer{border-left:3px solid var(--accent);padding:12px 18px;background:#8dace510;font-size:12px;color:var(--muted)}
+.field-filter{max-width:340px}.project-arrow{cursor:pointer;background:transparent;flex-shrink:0}
+#project-dialog{max-width:850px}.research-section{border-top:1px solid var(--line);padding:12px 0}.research-section p{white-space:pre-wrap;overflow-wrap:anywhere}.research-section h3{color:var(--accent)}.research-section a{color:var(--accent);text-decoration:underline}
+.card .pill{margin-bottom:10px}.brand strong{letter-spacing:-1px}.card-body>.text-button{display:block;margin:10px 0}
+@media(max-width:760px){.research-metrics{grid-template-columns:1fr 1fr}.ledger-intro h1{font-size:42px}.research-metrics>div{padding:12px}.research-metrics b{font-size:20px}}
+
+#campaign-image-preview{width:100%;max-height:200px;object-fit:cover;border-radius:10px;margin:12px 0}
+#campaign-image-preview[hidden],#remove-campaign-image[hidden]{display:none}
+/* Role-aware workspace */
+[hidden]{display:none!important}.role-strip{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:12px 16px;margin-bottom:22px;border:1px solid #d9ddd2;border-radius:12px;background:#f1f5ed}.role-strip span{font-size:13px;font-weight:600}.mono{overflow-wrap:anywhere}#signer-queue .panel{min-width:0}#role-details .pill{margin-right:8px}button:disabled{opacity:.45;cursor:not-allowed}@media(max-width:600px){.role-strip{align-items:flex-start;flex-direction:column}}
+.role-strip{background:#252b41;border-color:#505874;color:#e6eafa;margin-top:18px}.role-strip .text-button{color:#b9eee9}.sidebar{height:auto;min-height:94px;flex-wrap:wrap;padding-top:18px;padding-bottom:18px}.sidebar nav{flex-wrap:wrap;justify-content:flex-end;min-width:0}@media(max-width:760px){.sidebar nav{justify-content:flex-start;gap:6px}.nav{white-space:normal}.role-strip{overflow-wrap:anywhere}}
+.notice{position:relative;top:auto}#administration,#treasury,#workspace{padding-top:32px}
+.settlement-note{font-size:11px;line-height:1.6;color:#c9d1df}#replacement-list{margin-top:24px}#replacement-list .panel{margin-top:14px}#replacement-slot{max-width:100%}

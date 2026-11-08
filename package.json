@@ -1,0 +1,38 @@
+{
+  "name": "researchfund",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "compile": "hardhat compile",
+    "test": "hardhat test",
+    "node": "hardhat node",
+    "deploy:local": "hardhat run scripts/deploy.js --network localhost",
+    "demo": "hardhat run scripts/demo.js --network localhost",
+    "frontend": "vite frontend --host 127.0.0.1",
+    "build": "vite build frontend",
+    "audit": "python3 -m slither . --filter-paths 'node_modules|contracts/test' --json docs/evidence/slither-new.json",
+    "ipfs": "node scripts/ipfs-server.mjs",
+    "analyze": "hardhat run scripts/export-events.js --network localhost && python3 scripts/analyze.py docs/evidence/contributions.json",
+    "test:python": "python3 -m unittest discover -s test -p 'test_*.py'",
+    "test:metadata": "node --test test/research-metadata.test.mjs",
+    "test:ui": "python3 scripts/validate-local.py"
+  },
+  "devDependencies": {
+    "@nomicfoundation/hardhat-chai-matchers": "2.1.2",
+    "@nomicfoundation/hardhat-ethers": "3.1.3",
+    "@sparticuz/chromium": "153.0.0",
+    "chai": "4.5.0",
+    "ethers": "6.16.0",
+    "hardhat": "2.29.1",
+    "playwright": "1.64.1",
+    "solc": "0.8.28",
+    "vite": "6.4.1"
+  },
+  "dependencies": {
+    "@helia/unixfs": "5.1.0",
+    "@openzeppelin/contracts": "5.4.0",
+    "blockstore-fs": "2.0.5",
+    "helia": "5.5.1",
+    "multiformats": "13.4.1"
+  }
+}
